@@ -9,14 +9,13 @@ document.getElementById("btnTinhSoChanLe").onclick = function () {
   //b2: điều kiện lặp
   while (tong < 10000) {
     //b3: khối lệnh thực thi;
-    soNguyenDuong += 1;
+    soNguyenDuong++;
     tong += soNguyenDuong;
     //b4: Thay đổi điều kiện lặp
   }
   document.getElementById("ketQua1").innerHTML =
     "Số nguyên dương nhỏ nhất: " + soNguyenDuong;
 };
-
 //-----------------Bài 2---------------------
 document.getElementById("btnTinhTong").onclick = function (event) {
   event.preventDefault();
@@ -37,6 +36,7 @@ document.getElementById("btnTinhGiaiThua").onclick = function (event) {
   while (so <= n) {
     //b3:thực thi
     giaiThua *= so;
+    //b4:thay đổi điều kiện lặp
     so++;
   }
   document.getElementById("ketQua3").innerHTML = "Giai thừa: " + giaiThua;
